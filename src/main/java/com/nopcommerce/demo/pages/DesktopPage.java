@@ -18,7 +18,7 @@ public class DesktopPage extends AbstractPage {
     public void clickOnFirstDesktopItem() throws IOException {
         waitForElementToBeClickable(firstDesktopItemLink);
         firstDesktopItemLink.click();
-        perfNavigationTiming.writeMetricsToJsonFile("DesktopItemPage");
         waitForPageToLoad(driver);
+        perfNavigationTiming.writeMetricsToJsonFile("DesktopItemPage");
     }
 }

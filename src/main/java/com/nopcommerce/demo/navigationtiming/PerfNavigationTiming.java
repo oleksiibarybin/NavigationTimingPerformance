@@ -12,7 +12,7 @@ import java.io.IOException;
 import java.util.Map;
 
 public class PerfNavigationTiming {
-    Map<String, Object> timings = null;
+    private Map<String, Object> timings = null;
     private static FileWriter fileWriter;
 
     private final static File PERF_METRICS_JSON = new File("perfMetrics.json");
